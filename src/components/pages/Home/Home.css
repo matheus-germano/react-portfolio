@@ -1,0 +1,44 @@
+h1 {
+  font-size: 32px;
+  padding: 0 15px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.home-page {
+  height: 100vh;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.infos {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.infos h1 {
+  margin-top: 10px;
+}
+
+.infos p {
+  margin-top: 20px;
+}
+
+.icon {
+  color: var(--primary);
+  font-size: 32px;
+  margin: 10px 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  color: var(--primary-hover);
+  transition: 0.5s;
+}
+
+.muted {
+  color: #6c757d;
+}
