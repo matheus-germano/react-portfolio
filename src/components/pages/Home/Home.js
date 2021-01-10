@@ -1,25 +1,38 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import {AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
-import './Home.css'
-import homeSVG from '../../../images/home.svg'
+import HeroSection from '../../HeroSection/HeroSection'
+import { homeObjOne, homeObjTwo, homeObjThree } from './Data'
+import html from '../../../images/html5.png'
+import css from '../../../images/css-3.png'
+import boostrap from '../../../images/bootstrap.png'
 
-function Home() {
+function Home({
+
+}) {
   return (
-    <div className='home-page' id='home'>
-      <div className="row">
-        <div className="hero-image">
-          <img src={homeSVG} alt="" className='hero'/>
-        </div>
-        <div className="infos">
-          <Link><AiFillGithub className='icon'/></Link>
-          <Link><AiFillLinkedin className="icon"/></Link>
-          <Link><AiOutlineInstagram className="icon"/></Link>
-          <h1>MATHEUS GERMANO DA COSTA</h1>
-          <p className='muted'>Front-End Developer | UI/UX Designer</p>
+    <>
+      <HeroSection {...homeObjOne}/>
+      <HeroSection {...homeObjTwo}/>
+      <HeroSection {...homeObjThree}/>
+      <div className="stacks">
+        <div className="row">
+          <div className="col-3">
+            <div className="hero-img-wrapper">
+              <img src={html} alt=""/>
+            </div>
+          </div>
+          <div className="col-3">
+          <div className="hero-img-wrapper">
+              <img src={css} alt=""/>
+            </div>
+          </div>
+          <div className="col-3">
+          <div className="hero-img-wrapper">
+              <img src={boostrap} alt=""/>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
