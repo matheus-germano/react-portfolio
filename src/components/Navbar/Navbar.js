@@ -24,15 +24,15 @@ function Navbar() {
           {/* If it's, the Hamburguer menu will appear, if it isn't, the menu still the same */}
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <Link to='#home' className="nav-link">Home</Link>
+              <Link to='#home' className="nav-link" onClick={handleClick}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link to='#sobre-mim' className="nav-link">Sobre mim</Link>
+              <Link to='#sobre-mim' className="nav-link" onClick={handleClick}>Sobre mim</Link>
             </li>
             <li className="nav-item">
-              <Link to='#stacks' className="nav-link">Stacks</Link>
+              <Link to='#stacks' className="nav-link" onClick={handleClick}>Stacks</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={handleClick}>
               <Link to='#experiences' className="nav-link">Experiencias</Link>
             </li>
           </ul>
