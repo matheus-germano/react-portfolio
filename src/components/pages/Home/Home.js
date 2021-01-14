@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <div className="home-container">
-        <img src={HomeSVG} alt=""/>
+        {/* <img src={HomeSVG} alt=""/> */}
         <div className="home-content">
           <div className="home-social">
             <a href="https://github.com/matheus-germano" target="_blank" rel="noopener noreferrer">

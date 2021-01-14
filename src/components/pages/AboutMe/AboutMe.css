@@ -50,4 +50,10 @@
 .btn-primary {
   background-color: var(--primary);
   color: var(--white);
+  transition: 0.5s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transition: 0.5s;
 }

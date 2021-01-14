@@ -1,0 +1,59 @@
+.stacks-container h1 {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  padding-left: 10px;
+  margin-bottom: 15px;
+
+  border-left: 4px solid var(--primary);
+}
+
+.stacks-container p {
+  font-size: 1.6rem;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.stacks-container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 100px auto;
+}
+
+.stacks-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.stacks-text {
+  margin: auto 0;
+}
+
+.stacks-icons {
+  margin: 100px auto;
+  width: 100%;
+
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px 20px;
+}
+
+.stacks-icon {
+  cursor: pointer;
+  font-size: 12.8rem;
+  color: var(--primary) !important;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.stacks-icon:hover {
+  color: var(--primary-hover) !important;
+  transition: 0.5s;
+  transform: translateY(-10px);
+}
