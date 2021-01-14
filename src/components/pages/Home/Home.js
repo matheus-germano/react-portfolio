@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-import HomeSVG from '../../../images/home.svg'
 import {AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
 
 function Home() {
