@@ -16,18 +16,21 @@
 .about-container {
   width: 90%;
   max-width: 1200px;
-  display: flex;
   margin: 100px auto;
+}
 
+.about-content {
+  display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
-.about-container img {
+.about-content img {
   width: 512px;
   height: 100%;
 }
 
-.about-content {
+.about-text {
   margin: auto 0;
 }
 
@@ -56,4 +59,48 @@
 .btn-primary:hover {
   background-color: var(--primary-hover);
   transition: 0.5s;
+}
+
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+
+  .about-container img {
+    width: 50%;
+    height: 100%;
+  }
+
+  .about-container p {
+    margin: 20px 20px 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+
+  .about-content img {
+    margin: 20px;
+    width: 60%;
+    height: 100%;
+  }
+
+  .about-content p {
+    margin: 20px 20px 20px 0;
+  }
+
+  .about-content {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+    width: 100%;
+  }
 }
