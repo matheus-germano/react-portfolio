@@ -1,35 +1,27 @@
 import React from 'react'
-import HeroSection from '../../HeroSection/HeroSection'
-import { homeObjOne, homeObjTwo, homeObjThree } from './Data'
-import html from '../../../images/html5.png'
-import css from '../../../images/css-3.png'
-import boostrap from '../../../images/bootstrap.png'
+import './Home.css'
+import HomeSVG from '../../../images/home.svg'
+import {AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
 
-function Home({
-
-}) {
+function Home() {
   return (
     <>
-      <HeroSection {...homeObjOne}/>
-      <HeroSection {...homeObjTwo}/>
-      <HeroSection {...homeObjThree}/>
-      <div className="stacks">
-        <div className="row">
-          <div className="col-3">
-            <div className="hero-img-wrapper">
-              <img src={html} alt=""/>
-            </div>
+      <div className="home-container">
+        <img src={HomeSVG} alt=""/>
+        <div className="home-content">
+          <div className="home-social">
+            <a href="https://github.com/matheus-germano" target="_blank" rel="noopener noreferrer">
+              <AiFillGithub className="icon"/>
+            </a>
+            <a href="https://www.linkedin.com/in/mgermanodev" target="_blank" rel="noopener noreferrer">
+              <AiFillLinkedin className="icon"/>
+            </a>
+            <a href="https://www.instagram.com/_grrmano/" target="_blank" rel="noopener noreferrer">
+              <AiOutlineInstagram className="icon"/>
+            </a>
           </div>
-          <div className="col-3">
-          <div className="hero-img-wrapper">
-              <img src={css} alt=""/>
-            </div>
-          </div>
-          <div className="col-3">
-          <div className="hero-img-wrapper">
-              <img src={boostrap} alt=""/>
-            </div>
-          </div>
+          <h1>Matheus Germano da Costa</h1>
+          <h3>Front-End Developer | UI/UX Designer</h3>
         </div>
       </div>
     </>
