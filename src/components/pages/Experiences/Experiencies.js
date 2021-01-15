@@ -10,7 +10,7 @@ import './Experiences.css'
 function Experiencies() {
   return (
     <>
-      <div className="exp-container">
+      <div className="exp-container" id="experiences">
         <div className="exp-content">
           <div className="exp-text">
             <h1>Experiências</h1>

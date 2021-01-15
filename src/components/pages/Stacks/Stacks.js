@@ -9,7 +9,7 @@ import './Stacks.css'
 function Stacks() {
   return (
     <>
-      <div className="stacks-container">
+      <div className="stacks-container" id="stacks">
         <div className="stacks-content">
           <img src={StacksSVG} alt=""/>
           <div className="stacks-text">

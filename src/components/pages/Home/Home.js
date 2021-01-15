@@ -5,7 +5,7 @@ import {AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
 function Home() {
   return (
     <>
-      <div className="home-container">
+      <div className="home-container" id="home">
         {/* <img src={HomeSVG} alt=""/> */}
         <div className="home-content">
           <div className="home-social">
