@@ -1,7 +1,10 @@
 :root {
   --primary: #6c63ff;
   --primary-hover: #5850e2;
+  --dark-primary: #5048dd;
+  --dark-primary-hover: #3d36bb;
   --white: #f0f0f7;
   --gray: #343a40;
+  --light-gray: #d9d9d9;
   --black: #222;
 }

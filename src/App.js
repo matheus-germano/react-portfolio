@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/pages/Home/Home';
 import AboutMe from './components/pages/AboutMe/AboutMe';
 import Stacks from './components/pages/Stacks/Stacks';
+import Experiences from './components/pages/Experiences/Experiencies';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <AboutMe/>
       <Stacks/>
+      <Experiences/>
     </Router>
   );
 }
