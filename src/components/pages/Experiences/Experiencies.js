@@ -14,7 +14,7 @@ function Experiencies() {
         <div className="exp-content">
           <div className="exp-text">
             <h1>Experiências</h1>
-            <p>Ao longo desses anos aprendendo, foram desenvolvidos alguns projetos para colocar em prática meus conhecimentos. Aqui estão alguns deles, caso queira ver mais acesse o meu Github.</p>
+            <p>Ao longo desses anos aprendendo, foram desenvolvidos alguns projetos para colocar em prática meus conhecimentos. Aqui estão alguns deles, caso queira ver mais, acesse o meu Github.</p>
           </div>
           <img src={ExpSVG} alt=""/>
         </div>
