@@ -4,4 +4,7 @@ This project was made to improve my reactJS skills and be my personal portfolio.
 
 ### Technologies
 - ReactJS
-- Styled Components
+- React Icons
+- React Router Dom
+- React Scroll
+- CSS (responsivity)
