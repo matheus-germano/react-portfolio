@@ -24,16 +24,16 @@ function Navbar() {
           {/* If it's, the Hamburguer menu will appear, if it isn't, the menu still the same */}
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <Link to='home' className="nav-link" onClick={handleClick} smooth={true} duration={500} spy={true} offset={-80}>Home</Link>
+              <Link to='home' className="nav-link" onClick={handleClick} smooth={true} duration={500} spy={true} offset={-120}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link to='aboutme' className="nav-link" onClick={handleClick} smooth={true} duration={500} spy={true} offset={-80}>Sobre mim</Link>
+              <Link to='aboutme' className="nav-link" onClick={handleClick} smooth={true} duration={500} spy={true} offset={-120}>Sobre mim</Link>
             </li>
             <li className="nav-item">
-              <Link to='stacks' className="nav-link" onClick={handleClick} smooth={true} duration={500} spy={true} offset={-80}>Stacks</Link>
+              <Link to='stacks' className="nav-link" onClick={handleClick} smooth={true} duration={500} spy={true} offset={-120}>Stacks</Link>
             </li>
             <li className="nav-item">
-              <Link to='experiences' className="nav-link" onClick={handleClick} smooth={true} duration={500} spy={true} offset={-80}>Experiencias</Link>
+              <Link to='experiences' className="nav-link" onClick={handleClick} smooth={true} duration={500} spy={true} offset={-120}>Experiencias</Link>
             </li>
           </ul>
         </div>
