@@ -6,6 +6,7 @@ import AboutMe from './components/pages/AboutMe/AboutMe';
 import Stacks from './components/pages/Stacks/Stacks';
 import Experiences from './components/pages/Experiences/Experiencies';
 import ScrollToTop from './components/ScrollToTop';
+import { Projects } from './components/pages/Experiences/data';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Home/>
       <AboutMe/>
       <Stacks/>
-      <Experiences/>
+      <Experiences data={Projects}/>
     </Router>
   );
 }

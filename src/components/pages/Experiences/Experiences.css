@@ -44,6 +44,11 @@
   grid-gap: 20px;
 }
 
+.github-link {
+  color: var(--primary);
+  font-weight: bold;
+}
+
 .card {
   color: var(--white);
   border-radius: 4px;
