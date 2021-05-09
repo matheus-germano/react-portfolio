@@ -4,6 +4,7 @@ import ExpSVG from '../../../images/experience.svg'
 
 import {AiFillGithub} from 'react-icons/ai'
 import {IoEnterOutline} from 'react-icons/io5'
+import {FaRegSadCry} from 'react-icons/fa'
 
 import './Experiences.css'
 
@@ -35,7 +36,7 @@ function Experiencies({data}) {
                       Acesse <IoEnterOutline className="card-icon"/>
                     </a> :
                     <p className="card-button btn btn-secundary">
-                      Esse projeto não possui site <IoEnterOutline className="card-icon"/>
+                      Esse projeto não possui site <FaRegSadCry className="card-icon"/>
                     </p>
                     }
                   </div>
