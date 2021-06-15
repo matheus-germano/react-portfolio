@@ -20,7 +20,7 @@ function Home() {
             </a>
           </div>
           <h1>Matheus Germano da Costa</h1>
-          <h3>Front-End Developer | UI/UX Designer</h3>
+          <h3>Front-End Web Developer | Mobile Developer</h3>
         </div>
       </div>
     </>

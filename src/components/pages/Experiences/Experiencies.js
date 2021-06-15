@@ -15,15 +15,15 @@ function Experiencies({data}) {
         <div className="exp-content">
           <div className="exp-text">
             <h1>Experiências</h1>
-            <p>Ao longo desses anos aprendendo, foram desenvolvidos alguns projetos para colocar em prática meus conhecimentos.
-              Aqui estão alguns deles, caso queira ver mais, acesse o meu <a className="github-link" href="https://github.com/matheus-germano/" target="_blank" rel="noopener noreferrer">Github.</a></p>
+            <p>Ao longo dos anos estudando, desenvolvi alguns projetos para colocar em prática os conhecimentos que adquiri.
+            Abaixo estão alguns deles, mas caso queira ver mais, acesse o meu <a className="github-link" href="https://github.com/matheus-germano/" target="_blank" rel="noopener noreferrer">Github.</a></p>
           </div>
           <img src={ExpSVG} alt=""/>
         </div>
         <div className="exp-projects">
           {data.map((project, index) => {
             return(
-              <div className="card">
+              <div className="card" key={index}>
                 <div className="card-body">
                   <h1 className="card-title">{project.title}</h1>
                   <p className="card-description">{project.description}</p>
