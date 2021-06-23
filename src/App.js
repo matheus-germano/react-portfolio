@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/pages/Home/Home';
 import AboutMe from './components/pages/AboutMe/AboutMe';
 import Stacks from './components/pages/Stacks/Stacks';
-import Experiences from './components/pages/Experiences/Experiencies';
+import Experiences from './components/pages/Experiences/Experiences';
 import ScrollToTop from './components/ScrollToTop';
 import { Projects } from './components/pages/Experiences/data';
 

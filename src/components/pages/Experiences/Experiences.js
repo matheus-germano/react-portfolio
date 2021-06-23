@@ -8,7 +8,7 @@ import {FaRegSadCry} from 'react-icons/fa'
 
 import './Experiences.css'
 
-function Experiencies({data}) {
+function Experiences({data}) {
   const [repositories, setRepositories] = useState([])
 
   useEffect(() => {
@@ -17,7 +17,6 @@ function Experiencies({data}) {
         .then(response => response.json())
         .then(response => {
           setRepositories(response)
-          console.log(repositories)
         })
     }
 
@@ -26,6 +25,7 @@ function Experiencies({data}) {
 
   return (
     <>
+    {console.log(repositories)}
       <div className="exp-container" id="experiences">
         <div className="exp-content">
           <div className="exp-text">
@@ -36,33 +36,36 @@ function Experiencies({data}) {
           <img src={ExpSVG} alt=""/>
         </div>
         <div className="exp-projects">
-          {data.map((project, index) => {
-            return(
-              <div className="card" key={index}>
-                <div className="card-body">
-                  <h1 className="card-title">{project.title}</h1>
-                  <p className="card-description">{project.description}</p>
-                  <div className="card-buttons">
-                    <a href={project.repository} target="_blank" rel="noopener noreferrer" className="card-button btn btn-secundary">
-                      Repositório <AiFillGithub className="card-icon"/>
-                    </a>
-                    {project.link ?
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="card-button btn btn-secundary">
-                      Acesse <IoEnterOutline className="card-icon"/>
-                    </a> :
-                    <p className="card-button btn btn-secundary">
-                      Esse projeto não possui site <FaRegSadCry className="card-icon"/>
-                    </p>
-                    }
+          { repositories && (
+            repositories.map((repository) => {
+              return(
+                <div className="card" key={repository.id}>
+                  <div className="card-body">
+                    <h1 className="card-title">{repository.name}</h1>
+                    <p className="card-description">{repository.description}</p>
+                    <div className="card-buttons">
+                      <a href={repository.html_url} target="_blank" rel="noopener noreferrer" className="card-button btn btn-secundary">
+                        Repositório <AiFillGithub className="card-icon"/>
+                      </a>
+                      {/* {project.link ?
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="card-button btn btn-secundary">
+                        Acesse <IoEnterOutline className="card-icon"/>
+                      </a> :
+                      <p className="card-button btn btn-secundary">
+                        Esse projeto não possui site <FaRegSadCry className="card-icon"/>
+                      </p>
+                      } */}
+                    </div>
                   </div>
                 </div>
-              </div>
-            )
-          })}
+              )
+            })
+          )
+          }
         </div>
       </div>
     </>
   )
 }
 
-export default Experiencies
+export default Experiences
