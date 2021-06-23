@@ -3,8 +3,8 @@ import React, { useEffect, useState }  from 'react'
 import ExpSVG from '../../../images/experience.svg'
 
 import {AiFillGithub} from 'react-icons/ai'
-import {IoEnterOutline} from 'react-icons/io5'
-import {FaRegSadCry} from 'react-icons/fa'
+// import {IoEnterOutline} from 'react-icons/io5'
+// import {FaRegSadCry} from 'react-icons/fa'
 
 import './Experiences.css'
 
