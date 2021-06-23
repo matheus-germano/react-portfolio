@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState }  from 'react'
 
 import ExpSVG from '../../../images/experience.svg'
 
@@ -9,6 +9,21 @@ import {FaRegSadCry} from 'react-icons/fa'
 import './Experiences.css'
 
 function Experiencies({data}) {
+  const [repositories, setRepositories] = useState([])
+
+  useEffect(() => {
+    async function fetchData() {
+      await fetch('https://api.github.com/users/matheus-germano/repos')
+        .then(response => response.json())
+        .then(response => {
+          setRepositories(response)
+          console.log(repositories)
+        })
+    }
+
+    fetchData()
+  }, [])
+
   return (
     <>
       <div className="exp-container" id="experiences">
